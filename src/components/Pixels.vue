@@ -184,10 +184,6 @@ export default {
   max-width: 700px;
 }
 
-.skill-container {
-  //padding: 100px;
-}
-
 .tabs {
   border: 1px solid white;
   padding: 12px;

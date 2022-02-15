@@ -622,17 +622,24 @@ of Simple CSS Waves-->
         <FlipCards />
       </div>
     </div>
-    <div><Pixels /></div>
+
+    <div class="section-break">
+      <img src="../assets/wavblack.png" class="w-100" alt="" />
+    </div>
+
+    <div><Resume /></div>
   </div>
 </template>
 
 <script>
 import FlipCards from '../components/FlipCards'
-import Pixels from '../components/Pixels'
+//import Pixels from '../components/Pixels'
+import Resume from '../components/Resume'
 export default {
   components: {
     FlipCards,
-    Pixels,
+    //Pixels,
+    Resume,
   },
 }
 </script>
@@ -666,6 +673,12 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 .bg-lite-blue {
   background-color: #bbd3f5;
+}
+
+.section-break {
+  min-height: 50px;
+  background-color: #bbd3f5;
+  //background-color: #191923;
 }
 .portz {
   transition: transform 0.3s; /* Animation */
