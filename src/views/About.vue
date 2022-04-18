@@ -5,12 +5,12 @@ of Simple CSS Waves-->
 
     <div class="header">
       <!--Content before waves-->
-      <div class="inner-header flex">
+      <div class="inner-header flex pb-4 mt-4">
         <!--Just the logo.. Don't mind this-->
 
         <!-- svg -->
         <b-container class="mt-4 pt-4">
-          <div class="dark-bg">
+          <div class="clouds-bg">
             <div style="padding-top: 80px">
               <h3>Hi, my name is Kevin</h3>
 
@@ -500,20 +500,22 @@ of Simple CSS Waves-->
               </g>
             </svg>
           </div>
-          <a href=""
+          <a href="mailto:kcqdev@gmail.com"
             ><img class="social p-1 m-2" src="../assets/gmail.png" alt=""
           /></a>
-          <a href=""
+          <a href="skype:example123?chat"
             ><img class="social p-1 m-2" src="../assets/skype.png" alt=""
           /></a>
 
-          <a href=""
+          <a href="https://github.com/macknive" target="none"
             ><img
               class="social p-1 m-2 invert"
               src="../assets/github-sign.png"
               alt=""
           /></a>
-          <a href=""
+          <a
+            href="https://www.linkedin.com/in/kevin-corpuz-16a09246/"
+            target="none"
             ><img class="social p-1 m-2" src="../assets/linkedin.png" alt=""
           /></a>
           <a href=""
@@ -579,9 +581,9 @@ of Simple CSS Waves-->
       <div class="text-center p-2" style="">
         <img
           src="../assets/portfolio3.png"
-          height="200px"
-          width="500px"
-          class="img-fluid portz"
+          height="150px"
+          width="400px"
+          class="img-fluid"
         />
       </div>
 
@@ -623,10 +625,6 @@ of Simple CSS Waves-->
       </div>
     </div>
 
-    <div class="section-break">
-      <img src="../assets/wavblack.png" class="w-100" alt="" />
-    </div>
-
     <div><Resume /></div>
   </div>
 </template>
@@ -652,6 +650,7 @@ export default {
 }
 .second-section {
   overflow: hidden;
+  margin-top: 120px;
 }
 .main-container {
   margin: 0;
@@ -680,15 +679,6 @@ export default {
   background-color: #bbd3f5;
   //background-color: #191923;
 }
-.portz {
-  transition: transform 0.3s; /* Animation */
-}
-.portz:hover,
-.social:hover {
-  transform: scale(
-    1.5
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 
 .typed-element {
   display: unset;
@@ -698,10 +688,17 @@ export default {
   width: 50px;
   transition: transform 0.3s; /* Animation */
 }
+
+.social:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .invert {
   filter: invert(1);
 }
-.dark-bg {
+.clouds-bg {
   background-image: url('../assets/cloudss2.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -799,11 +796,11 @@ p {
 }
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  .dark-bg {
+  .clouds-bg {
     background-image: none;
     min-height: 100px !important;
   }
-  .dark-bg div {
+  .clouds-bg div {
     padding-top: 70px !important;
   }
   .waves {

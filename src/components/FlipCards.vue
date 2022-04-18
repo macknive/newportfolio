@@ -136,7 +136,7 @@ h1 {
 }
 
 .back {
-  background: url(https://media.istockphoto.com/photos/blue-background-picture-id157571423?k=20&m=157571423&s=612x612&w=0&h=GxSD_uRBNlBtsvXo54kGstPong-zzqKR545fF1Y5Mws=);
+  background-color: #325cc8;
 }
 
 .front:after {
