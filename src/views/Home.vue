@@ -115,6 +115,9 @@ of Simple CSS Waves-->
 
 <script>
 export default {
+  created() {
+    document.title = 'Kevin Corpuz'
+  },
   data() {
     return {
       code: null,
