@@ -6,7 +6,7 @@ of Simple CSS Waves-->
 
       <div class="header">
         <!--Content before waves-->
-        <div class="inner-header flex pb-4 mt-4">
+        <div class="inner-header flex pb-4">
           <!--Just the logo.. Don't mind this-->
 
           <!-- svg -->
@@ -766,9 +766,22 @@ p {
 .header {
   position: relative;
   text-align: center;
-  background: #325cc8;
+  background: linear-gradient(-45deg, #325cc8, #71e293, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: white;
-  padding-top: 50px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .logo {
   width: 50px;
