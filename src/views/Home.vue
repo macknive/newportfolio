@@ -59,7 +59,10 @@ of Simple CSS Waves-->
                   >
                 </div>
                 <div v-if="authenticated.error && !loading">
-                  <span class="text-white mt-2">Invalid code</span>
+                  <span class="text-white mt-2">Invalid code.</span><br /><br />
+                  <div>
+                    <b-button @click="sendMail">Request Code</b-button>
+                  </div>
                 </div>
 
                 <div></div>
@@ -151,6 +154,9 @@ export default {
       setTimeout(() => {
         this.$router.push('about')
       }, 1000)
+    },
+    sendMail() {
+      document.location = 'mailto:kcqdev@gmail.com'
     },
   },
   watch: {

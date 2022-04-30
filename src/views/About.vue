@@ -554,11 +554,65 @@ of Simple CSS Waves-->
               target="none"
               ><img
                 class="client"
-                height="60px"
-                width="200px"
+                height="50px"
+                width="180px"
                 src="../assets/olj.png"
                 alt=""
             /></a>
+            <br />
+            <div class="btn-holder mt-3">
+              <button class="btn btn-3 hover-border-3" v-b-modal.modal-1>
+                <span>Work Samples</span>
+              </button>
+              <b-modal id="modal-1" title="Links for work samples">
+                <ul>
+                  <li>
+                    <a
+                      href=" https://fastchinagroup.netlify.app/"
+                      target="blank"
+                      >Fast China Group</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://fastchinaexpress.netlify.app/"
+                      target="blank"
+                      >Fast China Express</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://fastchinasourcing.netlify.app/"
+                      target="blank"
+                      >Fast China Sourcing</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="https://kevincorpuz.netlify.app/" target="blank"
+                      >Old Portfolio</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="https://www.bestodds.com/" target="blank"
+                      >Best Odds</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="  https://arkis.io/" target="blank">Arkis</a>
+                  </li>
+
+                  <li>
+                    <a href="https://blue.dev.inprod.io/" target="blank"
+                      >In Prod</a
+                    >
+                  </li>
+                </ul>
+              </b-modal>
+            </div>
           </b-container>
 
           <!-- svg end -->
@@ -655,18 +709,18 @@ of Simple CSS Waves-->
 
       <div><Resume /></div>
     </div>
-    <div v-else>Not Authenticated. Get <a href="/">auth</a>.</div>
+    <div v-else><NotFound /></div>
   </div>
 </template>
 
 <script>
 import FlipCards from '../components/FlipCards'
-//import Pixels from '../components/Pixels'
+import NotFound from '../components/NotFound'
 import Resume from '../components/Resume'
 export default {
   components: {
     FlipCards,
-    //Pixels,
+    NotFound,
     Resume,
   },
   computed: {
@@ -1295,5 +1349,72 @@ p {
   right: 0px;
   bottom: 0px;
   font-size: 9px;
+}
+
+//buttons
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+::before,
+::after {
+  position: absolute;
+  content: '';
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 150px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn span {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.btn.hover-border-3::before,
+.btn.hover-border-3::after {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.35s;
+}
+.btn.hover-border-3::before {
+  top: 0;
+  right: 0;
+  border-top: 1px solid rgb(28, 31, 30);
+  border-left: 1px solid rgb(28, 31, 30);
+}
+.btn.hover-border-3::after {
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid rgb(28, 31, 30);
+  border-right: 1px solid rgb(28, 31, 30);
+}
+.btn.hover-border-3:hover::before,
+.btn.hover-border-3:hover::after {
+  width: 100%;
+  height: 99%;
+  opacity: 1;
+  transition: width 0.2s linear, height 0.15s 0.2s linear, opacity 0s;
 }
 </style>

@@ -17,7 +17,7 @@ export default new Vuex.Store({
   },
   mutations: {
     getAuthenticated(state, value) {
-      value == 'tesla' || value == 'supersecure'
+      value == 'gtr35' || value == 'supersecure'
         ? ((state.authenticated.error = false),
           (state.authenticated.status = true))
         : ((state.authenticated.error = true),
