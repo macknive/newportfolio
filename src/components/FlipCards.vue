@@ -3,12 +3,7 @@
     <b-row>
       <b-col ontouchstart="this.classList.toggle('hover');">
         <div class="card-container">
-          <div
-            class="front"
-            style="
-              background-image: url(https://www.techfunnel.com/wp-content/uploads/2017/12/7-Types-of-Hackers.jpg);
-            "
-          >
+          <div class="front first-card">
             <div class="inner">
               <p>Front End</p>
             </div>
@@ -27,12 +22,7 @@
       </b-col>
       <b-col ontouchstart="this.classList.toggle('hover');">
         <div class="card-container">
-          <div
-            class="front"
-            style="
-              background-image: url(https://f.hubspotusercontent40.net/hubfs/4650993/New_Avast_Academy/Hackers/Hacker-Thumb-a1.png);
-            "
-          >
+          <div class="front second-card">
             <div class="inner">
               <p>Back End</p>
             </div>
@@ -53,12 +43,7 @@
       </b-col>
       <b-col ontouchstart="this.classList.toggle('hover');">
         <div class="card-container">
-          <div
-            class="front"
-            style="
-              background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2019/08/gravit-designer-review-featured-iamge.jpg);
-            "
-          >
+          <div class="front third-card">
             <div class="inner">
               <p>Design</p>
             </div>
@@ -75,12 +60,7 @@
       </b-col>
       <b-col ontouchstart="this.classList.toggle('hover');">
         <div class="card-container">
-          <div
-            class="front"
-            style="
-              background-image: url(https://blog.tryshiftcdn.com/uploads/2018/12/shift-blog-2018-12-17-freelance-platforms-1-1.png);
-            "
-          >
+          <div class="front fourth-card">
             <div class="inner">
               <p>Freelancing</p>
             </div>
@@ -104,6 +84,18 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.first-card {
+  background-image: url('../assets/fr.png');
+}
+.second-card {
+  background-image: url('../assets/br.png');
+}
+.third-card {
+  background-image: url('../assets/dr.png');
+}
+.fourth-card {
+  background-image: url('../assets/ffr.png');
+}
 .col {
   padding: 30px;
 }
