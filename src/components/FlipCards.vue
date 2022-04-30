@@ -5,7 +5,9 @@
         <div class="card-container">
           <div
             class="front"
-            style="background-image: url(https://unsplash.it/500/500/)"
+            style="
+              background-image: url(https://www.techfunnel.com/wp-content/uploads/2017/12/7-Types-of-Hackers.jpg);
+            "
           >
             <div class="inner">
               <p>Front End</p>
@@ -13,10 +15,12 @@
           </div>
           <div class="back">
             <div class="inner">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-                cum repellat velit quae suscipit c.
-              </p>
+              - Javascript Frameworks<br />
+              - Vue 2 / Vue 3 / Nuxt <br />
+              - CSS Animations<br />
+              - SCSS Frameworks<br />
+              - Packages and Libraries<br />
+              - a bit of Angular and React<br />
             </div>
           </div>
         </div>
@@ -25,7 +29,9 @@
         <div class="card-container">
           <div
             class="front"
-            style="background-image: url(https://unsplash.it/508/508/)"
+            style="
+              background-image: url(https://f.hubspotusercontent40.net/hubfs/4650993/New_Avast_Academy/Hackers/Hacker-Thumb-a1.png);
+            "
           >
             <div class="inner">
               <p>Back End</p>
@@ -34,8 +40,12 @@
           <div class="back">
             <div class="inner">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-                cum repellat velit quae suscipit c.
+                - NodeJs <br />
+                - Express <br />
+                - API calls <br />
+                - Mongo DB <br />
+                - CRUD Operations <br />
+                - Git & Netlify hosting <br />
               </p>
             </div>
           </div>
@@ -45,7 +55,9 @@
         <div class="card-container">
           <div
             class="front"
-            style="background-image: url(https://unsplash.it/502/502/)"
+            style="
+              background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2019/08/gravit-designer-review-featured-iamge.jpg);
+            "
           >
             <div class="inner">
               <p>Design</p>
@@ -54,8 +66,8 @@
           <div class="back">
             <div class="inner">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-                cum repellat velit quae suscipit c.
+                - Figma <br />- Adobe Photoshop <br />- Adobe XD <br />
+                - SVG Animations
               </p>
             </div>
           </div>
@@ -65,7 +77,9 @@
         <div class="card-container">
           <div
             class="front"
-            style="background-image: url(https://unsplash.it/503/503/)"
+            style="
+              background-image: url(https://blog.tryshiftcdn.com/uploads/2018/12/shift-blog-2018-12-17-freelance-platforms-1-1.png);
+            "
           >
             <div class="inner">
               <p>Freelancing</p>
@@ -74,14 +88,14 @@
           <div class="back">
             <div class="inner">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-                cum repellat velit quae suscipit c.
+                Working full time and part time with side projects as my hobby
               </p>
             </div>
           </div>
         </div>
       </b-col>
     </b-row>
+    <br /><br /><br /><br /><br />
   </div>
 </template>
 
@@ -136,7 +150,14 @@ h1 {
 }
 
 .back {
-  background-color: #325cc8;
+  background: rgb(50, 92, 200);
+  background: linear-gradient(
+    41deg,
+    rgba(50, 92, 200, 1) 0%,
+    rgba(45, 83, 181, 1) 22%,
+    rgba(40, 71, 153, 1) 44%,
+    rgba(82, 118, 210, 1) 59%
+  );
 }
 
 .front:after {

@@ -500,10 +500,20 @@ of Simple CSS Waves-->
               </g>
             </svg>
           </div>
-          <a href="mailto:kcqdev@gmail.com"
+          <a
+            href="https://www.upwork.com/freelancers/~0126bc7e13400eb9d9?viewMode=1"
+            target="none"
+            ><img
+              class="client"
+              height="70px"
+              width="150px"
+              src="../assets/upwork.png"
+              alt=""
+          /></a>
+          <a href="mailto:kcqdev@gmail.com" target="none"
             ><img class="social p-1 m-2" src="../assets/gmail.png" alt=""
           /></a>
-          <a href="skype:example123?chat"
+          <a href="https://join.skype.com/invite/VBaQsvHsTE1z" target="none"
             ><img class="social p-1 m-2" src="../assets/skype.png" alt=""
           /></a>
 
@@ -518,17 +528,29 @@ of Simple CSS Waves-->
             target="none"
             ><img class="social p-1 m-2" src="../assets/linkedin.png" alt=""
           /></a>
-          <a href=""
+          <a href="https://discordapp.com/users/Macknive#2094" target="none"
             ><img
               class="social p-1 m-2 invert"
               src="../assets/discordblack.png"
               alt=""
           /></a>
 
-          <a href=""
+          <a
+            href="https://drive.google.com/file/d/1iKw9nyle5DY-RDzUU-4XINeCy3hK-ClC/view"
+            target="none"
             ><img
               class="social p-1 m-2 invert"
               src="../assets/curriculum-vitae.png"
+              alt=""
+          /></a>
+          <a
+            href="https://www.onlinejobs.ph/jobseekers/info/833976"
+            target="none"
+            ><img
+              class="client"
+              height="60px"
+              width="200px"
+              src="../assets/olj.png"
               alt=""
           /></a>
         </b-container>
@@ -689,10 +711,18 @@ export default {
   transition: transform 0.3s; /* Animation */
 }
 
+.client {
+  transition: transform 0.3s; /* Animation */
+}
+
 .social:hover {
   transform: scale(
     1.5
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.client:hover {
+  transform: scale(1.2);
 }
 
 .invert {
