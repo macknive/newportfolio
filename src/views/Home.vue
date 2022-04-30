@@ -50,7 +50,9 @@ of Simple CSS Waves-->
                 </div>
                 <div v-else>
                   <div class="mt-4 text-white">Code</div>
-                  <div class="mt-4"><input type="text" v-model="code" /></div>
+                  <div class="mt-4">
+                    <input type="password" v-model="code" />
+                  </div>
 
                   <b-btn class="btn btn-dark my-4" @click="proceed()"
                     >Proceed</b-btn
