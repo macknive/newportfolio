@@ -68,4 +68,10 @@ p {
   width: 100%;
   padding: 50px;
 }
+
+@media (max-width: 768px) {
+  .neo {
+    padding: 12px !important;
+  }
+}
 </style>

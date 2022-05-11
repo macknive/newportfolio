@@ -11,7 +11,7 @@ of Simple CSS Waves-->
         <!-- svg -->
         <b-container class="mt-4 pt-4">
           <div class="clouds-bg">
-            <div style="padding-top: 80px">
+            <div style="padding-top: 65px">
               <h3>Hi, my name is Kevin</h3>
 
               <vue-typed-js
@@ -31,7 +31,7 @@ of Simple CSS Waves-->
             </div>
           </div>
 
-          <div class="avatar mt-4">
+          <div class="avatar">
             <svg
               id="Camada_1"
               width="200px"
@@ -554,7 +554,7 @@ of Simple CSS Waves-->
               alt=""
           /></a>
           <br />
-          <div class="btn-holder mt-3">
+          <div class="btn-holder mt-1">
             <button class="btn btn-3 hover-border-3" v-b-modal.modal-1>
               <span>Work Samples</span>
             </button>
@@ -783,7 +783,7 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  min-height: 250px;
+  height: 220px;
   font-family: 'Gochi Hand', cursive;
   color: rgb(1, 0, 87);
 }
@@ -807,6 +807,7 @@ p {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   color: white;
+  padding-top: 72px;
 }
 
 @keyframes gradient {
@@ -889,12 +890,14 @@ p {
 }
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
+  .header {
+    padding-top: 160px;
+  }
   .clouds-bg {
-    background-image: none;
     min-height: 100px !important;
   }
   .clouds-bg div {
-    padding-top: 70px !important;
+    //padding-top: 150px !important;
   }
   .waves {
     height: 100px;
