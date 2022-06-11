@@ -536,13 +536,17 @@ of Simple CSS Waves-->
           /></a>
 
           <a
-            href="https://drive.google.com/file/d/1iKw9nyle5DY-RDzUU-4XINeCy3hK-ClC/view"
-            target="none"
+            v-b-modal.modal-center
             ><img
               class="social p-1 m-2 invert"
               src="../assets/curriculum-vitae.png"
               alt=""
           /></a>
+          <b-modal id="modal-center" centered title="Authentication">
+            <div>
+              <b-form-input v-model="text" placeholder="Enter promo code"></b-form-input>
+            </div>
+          </b-modal>
           <a
             href="https://www.onlinejobs.ph/jobseekers/info/833976"
             target="none"
